@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %> | Contact</title>
+</head>
+<header>
+  <% include ../partials/header%>
+</header>
+<body>
+  <h1>Have a question about Cookies? Want to submit a new recipe?</h1>
+  <form action="/contact" method="POST">
+    Name: <input name="name" type="text" placeholder="Name">
+    Email: <input name="email" type="email" placeholder="Email">
+    Message:
+    <input name="message" type="text" placeholder="Type your message here.">
+    <input type="submit" value="Send e-mail">
+  </form>
+</body>
+<footer>
+  <% include ../partials/footer%>
+</footer>
+</html>
